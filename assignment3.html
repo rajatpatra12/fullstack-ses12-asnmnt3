@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body id="body">
+    
+	<script type="text/javascript">
+        //this is the map function
+        function map(arr,callback){
+            //blank array
+            var newarr=[];
+            arr.forEach(function(x){
+                //pushing element to blank array
+                newarr.push(x*2);
+            });
+            console.log(newarr);
+        }
+        map([2, 4, 6], function (num) {
+            return num * 2;
+        });
+
+	</script>
+</body>
+</html>
